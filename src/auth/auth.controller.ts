@@ -12,3 +12,5 @@ export class AuthController {
     return this.authService.SignUpUser(authCredentialDto);
   }
 }
+
+
