@@ -1,0 +1,19 @@
+reposetories manage entities(tables) in an encapsulated maner. so create one for each. The entites are typical classes that represent the tables in the database. if you create a simple class and decorate it with @Entity decorator from the typeorm module(package), then typeorm will automatically map that class as a database table.  
+
+
+repositories we create are called from the service whenever we want to perform operation related to the db
+
+
+===any asynchronous operation is expected to return a promise not a just plain value but a promise otherwise typescript is going to complain
+
+===in the repository pattern it is also possible to add custom methods in addition to those provided by the base Repository class we extended while creating the repository. the base repositoty class provides methods llike create, delete, findOne, finbyids, insert and others
+
+====the basic difference betweeen the remove and delete method is when usi
+
+===database operations are quite expesive performance wise, so when making a call to the db make the list possible call.  
+
+steps
+
+1. inject the taskRepository via DI to the task service
+2.
+ 
